@@ -1,0 +1,2 @@
+[2019-04-23 18:58:59] layer "+38 065 478 76 39 info@mail.com": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2019-04-23 18:58:59] layer "+38 093 596 89 45": Expected Either a default asset specification or a layer asset specification but "+" found.
