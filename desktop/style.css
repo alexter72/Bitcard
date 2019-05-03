@@ -424,12 +424,14 @@ header {
 }
 
 ul.points {
+  position:relative;
   float: right;
   width: 370px;
   padding-left: 0px;
   overflow-y: scroll;
   overflow-x: hidden;
   height: 490px;
+  z-index:0;
 }
 
 .point {
@@ -441,7 +443,7 @@ ul.points {
   line-height: 22px;
   list-style: none;
   margin: 30px 0 30px 0;
-  width: 200px;
+  width: 210px;
   padding-left: 40px;
 }
 
@@ -449,17 +451,18 @@ ul.points {
   font-weight: bold;
 }
 
-.points li:last-child {
+/*.points li:last-child {
   background: linear-gradient(rgb(51, 51, 51, 0.7), rgb(51, 51, 51, 0.2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+}*/
 
 .points li:hover {
   color: rgb(237, 193, 30);
 }
 
-.circle {
+.point p::before {
+  content:'';
   position: absolute;
   width: 9px;
   height: 9px;
@@ -471,20 +474,32 @@ ul.points {
   border: 2px solid rgb(237, 193, 30);
   border-radius: 50%;
   transition-property: border, top, left;
-  transition-duration: 0.5s;
+  transition-duration: 1.0s;
 }
 
 
 
-.point p:hover + .circle {
+.point p:hover::before{
   border: 9px solid rgb(237, 193, 30);
   background: none;
   padding: 0;
 }
 
+ul.points::after {
+  content:'';
+  position:absolute;
+  top:380px;
+  left:35px;
+  width:215px;
+  height:90px;
+  background: linear-gradient(rgb(51, 51, 51, 0.7), rgb(51, 51, 51, 0.2));
+  z-index:1;
+ 
+}
+
 ul.points::-webkit-scrollbar {
   width: 10px;
-  height: 100%
+  height: 100%;
 }
 
 ul.points::-webkit-scrollbar-track {
