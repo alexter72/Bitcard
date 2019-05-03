@@ -431,11 +431,6 @@ ul.points {
   overflow-y: scroll;
   overflow-x: hidden;
   height: 490px;
-<<<<<<< HEAD
- 
-=======
-  z-index:0;
->>>>>>> 864c6349ff7f31e83910d085f22e6a564dc9c067
 }
 
 .point {
@@ -497,13 +492,8 @@ ul.points::after {
   width:215px;
   height:90px;
   background: linear-gradient(rgb(51, 51, 51, 0.7), rgb(51, 51, 51, 0.2));
-<<<<<<< HEAD
-  z-index:- 10;
-=======
   z-index:1;
->>>>>>> 864c6349ff7f31e83910d085f22e6a564dc9c067
- 
-}
+ }
 
 ul.points::-webkit-scrollbar {
   width: 10px;
