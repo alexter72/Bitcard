@@ -305,11 +305,8 @@ header {
   max-width: 100%;
 
   padding-top: 55px;
-  background: url("png/Howitworks.png") no-repeat top center,
-    url("png/Howitworks_under.png") no-repeat top center;
-
+  background: url("png/Howitworks.png") no-repeat top center, rgb(238, 238, 238);
   padding-bottom: 20px;
-  padding-bottom: 130px;
 }
 
 .how-it-works .container .headline-white {
@@ -351,6 +348,7 @@ header {
   width: 100%;
   height: 100%;
   padding-bottom: 0;
+  background: rgb(238, 238, 238);
 }
 
 .faq .headline-black {
@@ -423,27 +421,31 @@ header {
   color: black;
 }
 
-.gradient-field{
-position:relative;
-float:right;
-width:370px;
-height:508px;
+.gradient-field {
+  position: relative;
+  float: right;
+  width: 370px;
+  height: 508px;
 }
 
-.gradient-field::after{
-  content:'';
-  position:absolute;
-  bottom:0px;
-  left:0;
-  right:0;
-  width:calc(100%-10px);
-  height:82px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4),
-  rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
- }
+.gradient-field::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  width: calc(100% - 10px);
+  height: 82px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.9)
+  );
+}
 
 ul.points {
-  position:relative;
+  position: relative;
   float: right;
   width: 370px;
   padding-left: 0px;
@@ -463,19 +465,29 @@ ul.points {
   margin: 30px 0 30px 0;
   width: 210px;
   padding-left: 40px;
-  
 }
 
-.point b {
+.shop {
+  margin:0;
   font-weight: bold;
+  line-height: normal;
 }
+
+.point:last-child {
+  margin-bottom: 82px;
+}
+
+.point p{
+margin:0;
+}
+
 
 .points li:hover {
   color: rgb(237, 193, 30);
 }
 
 .point p::before {
-  content:'';
+  content: "";
   position: absolute;
   width: 9px;
   height: 9px;
@@ -487,12 +499,10 @@ ul.points {
   border: 2px solid rgb(237, 193, 30);
   border-radius: 50%;
   transition-property: border, top, left;
-  transition-duration: 1.0s;
+  transition-duration: 1s;
 }
 
-
-
-.point p:hover::before{
+.point p:hover::before {
   border: 9px solid rgb(237, 193, 30);
   background: none;
   padding: 0;
@@ -504,11 +514,10 @@ ul.points::-webkit-scrollbar {
 }
 
 ul.points::-webkit-scrollbar-track {
-  background-color:white;
+  background-color: white;
 }
 
 ul.points::-webkit-scrollbar-thumb {
   background-color: rgb(237, 193, 30);
-  height:40px;
-  
+  height: 40px;
 }
