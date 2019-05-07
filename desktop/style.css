@@ -522,6 +522,11 @@ ul.points::-webkit-scrollbar-thumb {
   padding-top: 55px;
 }
 
+.line {
+  width:100%;
+  
+}
+
 .form-shop-order {
   width: 615px;
   margin: 130px 0 0 120px;
