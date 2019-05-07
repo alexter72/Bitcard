@@ -252,7 +252,7 @@ header {
   margin: 0 auto;
 }
 
-.enter-field label {
+ label {
   display: inline-block;
   padding-left: 15px;
   padding-bottom: 5px;
@@ -385,7 +385,6 @@ header {
 .where_can_i_buy {
   max-width: 100%;
   padding-top: 55px;
-  padding-bottom: 0px;
 }
 
 .reference-points {
@@ -399,7 +398,6 @@ header {
   position: relative;
   margin: -20px 0 0 -40px;
 }
-
 
 select {
   float: right;
@@ -518,3 +516,47 @@ ul.points::-webkit-scrollbar-thumb {
   background-color: rgb(237, 193, 30);
   height: 40px;
 }
+
+.shop-order {
+  width: 100%;
+  padding-top: 55px;
+}
+
+.form-shop-order{
+  width:900px;
+  margin: 130px 400px 0 120px;
+}
+
+.field-phonenumber{
+  display:block;
+  float:left;
+  
+}
+.field-phonenumber label{
+  display: inline-block;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-family: "Roboto-Medium";
+  color: rgb(237, 193, 30);
+  line-height:normal;
+  text-align: left;
+
+}
+
+
+/*.form-shop-order input{
+  display: block;
+  float:left;
+  width:300px;
+  height: 45px;
+  border-color: rgb(237, 193, 30);
+  border-radius: 5px; 
+  font-size: 16px;
+  font-family: "Roboto-Regular";
+  color: rgb(51, 51, 51);
+  line-height: normal;
+  text-align: left;
+  padding-right:15px;
+}
+
