@@ -211,6 +211,7 @@ header {
   border-radius: 5px;
   padding: 13px 0;
   text-decoration: none;
+  line-height: 16px;
 }
 
 .btn-210 {
@@ -520,34 +521,38 @@ ul.points::-webkit-scrollbar-thumb {
 .shop-order {
   width: 100%;
   padding-top: 55px;
+  padding-bottom: 100px;
 }
 
 .line {
-  width:100%;
-  
+  display: inline;
+  width: 100%;
+  margin-top: 130px;
+  text-align: justify;
 }
 
 .form-shop-order {
+  display:inline-block;
   width: 615px;
-  margin: 130px 0 0 120px;
-  padding-bottom:0;
+  margin-left: 120px;
+  padding-bottom: 0;
+  height: 67px;
+  margin-right: 15px;
 }
 
 .field-form {
-  display: block;
+  display: inline-block;
   width: 300px;
   height: 67px;
+  vertical-align: bottom;
+}
+
+.field-form:first-child {
   
 }
 
-.field-form:first-child{
-  float:left;
-}
-
-.field-form:last-child{
-  float:right;
-
-
+.field-form:last-child {
+  
 }
 .field-form label {
   display: inline-block;
@@ -561,6 +566,7 @@ ul.points::-webkit-scrollbar-thumb {
 }
 
 .field-form input {
+  display:inline-block;
   width: 300px;
   height: 45px;
   border: 1px solid rgb(237, 193, 30);
@@ -571,10 +577,29 @@ ul.points::-webkit-scrollbar-thumb {
   line-height: normal;
   text-align: left;
   box-sizing: border-box;
- }
+  padding-left: 20px;
+  vertical-align: bottom;
+}
 
-.btn-not-color{
-  clear:both;
-  float:left;
+/*.shop-order-btn {
+  float: left;
+  width: 120px;
+  height: 45px;
+  margin-left: 70px;
+  padding-top: 35px;
+}*/
 
+.btn-not-color {
+  display:inline-block;
+  font-family: auto;
+  background-color: white;
+  color: rgb(51, 51, 51);
+  line-height: 16px;
+  width: 120px;
+  height: 45px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left:70px;
+  vertical-align: bottom;
 }
