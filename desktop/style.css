@@ -449,6 +449,8 @@ ul.points {
   overflow-y: scroll;
   overflow-x: hidden;
   height: 490px;
+  margin: 0;
+  margin-top: 16px;
 }
 
 .point {
@@ -518,31 +520,27 @@ ul.points::-webkit-scrollbar-thumb {
   height: 40px;
 }
 
-.shop-order {
+.dealer {
   width: 100%;
-  padding-top: 55px;
-  padding-bottom: 40px;
-  
+  padding-top: 45px;
+
+  background: url("png/Shape.png") no-repeat top center;
 }
 
-.shop-order .container {
+.dealer .container {
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-.shop-order .headline-white{
-margin-top: 40px;
-}
-
 .line {
   width: 100%;
-  margin-top: 130px;
+  margin-top: 65px;
   vertical-align: bottom;
   padding-bottom: 0;
-  margin-bottom: 155px;
+  margin-bottom: 125px;
 }
 
-.form-shop-order {
+.form-dealer {
   float: left;
   width: 615px;
   margin-left: 120px;
@@ -552,7 +550,6 @@ margin-top: 40px;
 }
 
 .field-form {
-  display: inline-block;
   width: 300px;
   height: 67px;
   vertical-align: bottom;
@@ -566,7 +563,6 @@ margin-top: 40px;
 .field-form:last-child {
   float: right;
   padding-top: 22px;
-  height: 45px;
 }
 .field-form label {
   display: inline-block;
@@ -583,7 +579,7 @@ margin-top: 40px;
   display: block;
   width: 300px;
   height: 45px;
-  border: 1px solid rgb(237, 193, 30);
+  border: 2px solid rgb(237, 193, 30);
   border-radius: 5px;
   font-size: 16px;
   font-family: "Roboto-Regular";
@@ -593,6 +589,7 @@ margin-top: 40px;
   box-sizing: border-box;
   padding: 13px 20px;
   margin-bottom: 0px;
+  background: rgb(237, 193, 30, 0.1);
 }
 
 .btn-send {
@@ -607,8 +604,45 @@ margin-top: 40px;
   width: 200px;
 }
 
-.shop-order .reference-points {
-  margin-top: 155px;
+.dealer-contacts {
+  position: relative;
+  width: inherit;
+  margin-top: 85px;
+}
+
+.map-dealer {
+  float: left;
+  position: relative;
+  margin: -20px 0 0 -40px;
+}
+
+.address {
+  float: left;
+  width: 250px;
+  margin: 125px 50px 30px 60px;
+}
+
+.adr {
+  font-size: 20px;
+  font-family: "Roboto-Regular";
+  color: rgb(255, 255, 255);
+  line-height: 20px;
+  text-align: left;
+}
+.social {
+float:left;
+width:140px;
+height: 50px;
+margin-left:60px;
+}
+
+.soc{
+  float:left;
+  margin-right:30px;
+}
+
+.soc:last-child{
+  margin-right:0;
 }
 
 .footer {
