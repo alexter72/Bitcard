@@ -5,7 +5,6 @@
     <title>Bitcards</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-
   <body>
     <section class="bitcard-top">
       <div class="container">
@@ -16,11 +15,11 @@
           <nav>
             <ul class="header-nav">
               <li><a class="home" href="#">Home</a></li>
-              <li><a href="#">How it works</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Where can I buy</a></li>
-              <li><a href="#">Become a dealer</a></li>
-              <li><a href="#">Contacts</a></li>
+              <li><a href="#how-it-works">How it works</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#where can I buy">Where can I buy</a></li>
+              <li><a href="#become a dealer">Become a dealer</a></li>
+              <li><a href="#contacts">Contacts</a></li>
             </ul>
           </nav>
         </header>
@@ -220,7 +219,7 @@
       </div>
     </section>
 
-    <section class="how-it-works">
+    <section class="how-it-works" id="how-it-works">
       <div class="container">
         <div class="icon-stars">
           <img src="png/Shape_stars.png" />
@@ -267,7 +266,7 @@
       </div>
     </section>
 
-    <section class="faq">
+    <section class="faq" id="faq">
       <div class="icon-stars">
         <img src="png/Shape_stars.png" />
       </div>
@@ -324,10 +323,42 @@
         <div class="icon-stars">
           <img src="png/Shape_stars.png" />
         </div>
-        <h1 class="headline-black">Where can I buy?</h1>
+        <h1 class="headline-black" id="where can I buy">Where can I buy?</h1>
         <div class="reference-points clearfix">
-          <div id="map" class="map">
-            <img src="png/map.png" />
+          <div class="map">
+            <div id="map">
+              <script>
+                function initMap() {
+                  // В переменной map создаем объект карты GoogleMaps и вешаем эту переменную на <div id="map"></div>
+                  map = new google.maps.Map(document.getElementById("map"), {
+                    // При создании объекта карты необходимо указать его свойства
+                    // center - определяем точку на которой карта будет центрироваться
+                    center: { lat: 49.96, lng: 36.26 },
+                    // zoom - определяет масштаб. 0 - видно всю планету. 18 - видно дома и улицы города.
+                    zoom: 18
+                  });
+                  var marker = new google.maps.Marker({
+
+// Определяем позицию маркера
+position: {lat: 49.96, lng: 36.26},
+
+// Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+map: map,
+
+// Пишем название маркера - появится если навести на него курсор и немного подождать
+title: 'Наш маркер: Гагарина,132'
+  // Укажем свою иконку для маркера
+  
+              })
+                }
+              </script>
+
+              <script
+                async
+                defer
+                src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+              ></script>
+            </div>
           </div>
 
           <select name="towns">
@@ -384,9 +415,9 @@
         <div class="icon-stars">
           <img src="png/Shape_stars.png" />
         </div>
-        <h1 class="headline-white">
-            Become a dealer
-          </h1>
+        <h1 class="headline-white" id="become a dealer">
+          Become a dealer
+        </h1>
         <div class="line clearfix">
           <form class="form-dealer" action="http" method="GET">
             <div class="field-form">
@@ -394,6 +425,7 @@
               <input type="text" id="ph" name="ph" />
             </div>
             <div class="field-form">
+              <label for="ph">Ваш Email</label>
               <input type="text" id="email" name="email" value="Email" />
             </div>
           </form>
@@ -405,24 +437,23 @@
         <div class="icon-stars">
           <img src="png/Shape_stars.png" />
         </div>
-        <h1 class="headline-white">
-            Contact Us
-          </h1>
+        <h1 class="headline-white" id="contacts">
+          Contact Us
+        </h1>
         <div class="dealer-contacts clearfix">
-          <div  class="map-dealer">
+          <div class="map-dealer">
             <img src="png/map.png" />
           </div>
           <div class="address">
             <p class="adr adr-town">Kharkiv, Ukraine, 675847</p>
             <p class="adr adr-phone">+38 065 478 76 39</p>
             <p class="adr adr-email">info@mail.com</p>
-
           </div>
           <div class="social">
-            <a href=# class="soc"><img src="png/Shape_facebook.png"></a>
-            <a href=# class="soc"><img src="png/Shape_twitter.png"></a>
-          </div>     
-           </div>
+            <a href="#" class="soc"><img src="png/Shape_facebook.png"/></a>
+            <a href="#" class="soc"><img src="png/Shape_twitter.png"/></a>
+          </div>
+        </div>
       </div>
     </section>
     <footer class="footer">
