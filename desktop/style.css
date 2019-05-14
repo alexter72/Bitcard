@@ -552,18 +552,22 @@ ul.points::-webkit-scrollbar-thumb {
 }
 
 .form-dealer {
+  display:block;
   float: left;
   width: 615px;
   margin-left: 120px;
   padding-bottom: 0;
   margin-right: 0;
   margin-bottom: 0;
+ 
 }
 
 .field-form {
+  display:block;
   width: 300px;
   height: 67px;
   margin-bottom: 0;
+ 
 }
 
 .field-form:first-child {
@@ -571,11 +575,12 @@ ul.points::-webkit-scrollbar-thumb {
 }
 
 .field-form:last-child {
+  
   float: right;
   
 }
 .field-form label {
-  display: inline-block;
+  display: block;
   padding-left: 15px;
   padding-bottom: 5px;
   font-size: 14px;
@@ -586,7 +591,7 @@ ul.points::-webkit-scrollbar-thumb {
 }
 
 .field-form input {
-  display: block;
+  display: inline-block;
   width: 300px;
   height: 45px;
   border: 2px solid rgb(237, 193, 30);
@@ -600,6 +605,7 @@ ul.points::-webkit-scrollbar-thumb {
   padding: 13px 20px;
   margin-bottom: 0px;
   background: rgb(237, 193, 30, 0.1);
+  
 }
 
 .btn-send {
