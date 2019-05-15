@@ -76,6 +76,19 @@ body {
   width: 100%;
 }
 
+@keyframes flash{
+from{opacity: 0.9}
+50%{opacity:0.1}
+to{opacity:0.9}
+}
+
+.sun{
+animation-name: flash;
+animation-duration:2s;
+animation-iteration-count:infinite;
+
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
