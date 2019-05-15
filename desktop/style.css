@@ -312,9 +312,9 @@ label {
 }
 
 .sun {
-  animation-name: flash;
+  /*animation-name: flash;
   animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite;*/
   width: 360px;
   height: 180px;
   margin: 45px auto 0 auto;

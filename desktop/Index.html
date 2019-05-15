@@ -185,36 +185,77 @@
       </div>
       <div class="sun clearfix">
         <svg width="360" height="180">
-          <circle r="60" cx="50%" cy="100%" fill="rgb(237, 193, 30)"></circle>
+          <circle r="60" cx="50%" cy="100%" fill="rgb(237, 193, 30)">
+            <animate
+              attributeName="r"
+              from="0"
+              to="60"
+              dur="3s"
+              repeatCount="indefinite"
+            />
+          </circle>
           <circle
             r="105"
             cx="50%"
             cy="100%"
             fill="rgb(237, 193, 30)"
             fill-opacity="0.6"
-          ></circle>
+          >
+            <animate
+              attributeName="r"
+              from="0"
+              to="105"
+              dur="3s"
+              repeatCount="indefinite"
+            />
+          </circle>
           <circle
             r="130"
             cx="50%"
             cy="100%"
             fill="rgb(237, 193, 30)"
             fill-opacity="0.4"
-          ></circle>
+          >
+            <animate
+              attributeName="r"
+              from="0"
+              to="130"
+              dur="3s"
+              repeatCount="indefinite"
+            />
+          </circle>
           <circle
             r="180"
             cx="50%"
             cy="100%"
             fill="rgb(237, 193, 30)"
             fill-opacity="0.2"
-          ></circle>
-          <image
+          >
+            <animate
+              attributeName="r"
+              from="0"
+              to="180"
+              dur="3s"
+              repeatCount="indefinite"
+            />
+          </circle>
+          <!-- <image
             xlink:href="png/Shape_arrow_down.png"
             src="Shape_arrow_down.png"
             width="30"
             height="30"
             x="165"
             y="140"
-          ></image>
+          ></image>-->
+          <circle id="circle" r="1" cx="50%" cy="100%" fill="white">
+              <animate
+              attributeName="cy"
+              from="100%"
+              to="0"
+              dur="3s"
+              repeatCount="indefinite"
+            />
+          </circle>
         </svg>
       </div>
     </section>
@@ -333,21 +374,20 @@
                   map = new google.maps.Map(document.getElementById("map"), {
                     // При создании объекта карты необходимо указать его свойства
                     // center - определяем точку на которой карта будет центрироваться
-                    center: { lat: 49.96, lng: 36.26 },
+                    center: { lat: 49.963129, lng: 36.259529 },
                     // zoom - определяет масштаб. 0 - видно всю планету. 18 - видно дома и улицы города.
                     zoom: 18
                   });
                   var marker = new google.maps.Marker({
                     // Определяем позицию маркера
-                    position: { lat: 49.96, lng: 36.26 },
+                    position: { lat: 49.963129, lng: 36.259529 },
 
                     // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
                     map: map,
 
                     // Пишем название маркера - появится если навести на него курсор и немного подождать
-                    title: "Гагарина,132",
+                    title: "Гагарина,132"
                     // Укажем свою иконку для маркера
-                  
                   });
                 }
               </script>
@@ -424,8 +464,13 @@
               <input type="text" id="ph" name="ph" placeholder="Your phone" />
             </div>
             <div class="field-form">
-             <label for="ph">Ваш Email</label>                                            
-              <input type="text" id="email" name="email" placeholder="Your Email"  />
+              <label for="ph">Ваш Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+              />
             </div>
           </form>
           <div class="btn-send">
