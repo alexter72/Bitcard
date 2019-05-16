@@ -78,14 +78,12 @@ body {
 
 @keyframes flash {
   from {
-    opacity: 0.9;
-  }
-  50% {
-    opacity: 0.1;
+    opacity: 0;
   }
   to {
-    opacity: 0.9;
+    opacity: 1.0;
   }
+  
 }
 
 .container {
@@ -312,12 +310,18 @@ label {
 }
 
 .sun {
-  /*animation-name: flash;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;*/
+
   width: 360px;
   height: 180px;
   margin: 45px auto 0 auto;
+}
+
+.sun image{
+
+  animation-name: flash;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
 }
 
 .how-it-works {
