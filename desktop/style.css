@@ -80,8 +80,11 @@ body {
   from {
     opacity: 0.1;
   }
-  to {
-    opacity: 1.0;
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
   
 }
@@ -300,7 +303,7 @@ label {
   padding-left: 20px;
 }
 
-.btn-plus {
+.btn-45 {
   width: 45px;
   float: right;
 }
@@ -310,7 +313,6 @@ label {
 }
 
 .sun {
-
   width: 360px;
   height: 180px;
   margin: 45px auto 0 auto;
@@ -318,9 +320,9 @@ label {
 
 .sun image {
   animation-name: flash;
-  animation-duration: 3s;
-  animation-delay: 1s;
+  animation-duration: 0.5s;
   animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .how-it-works {
