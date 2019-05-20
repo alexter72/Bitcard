@@ -86,7 +86,6 @@ body {
   100% {
     opacity: 1;
   }
-  
 }
 
 .container {
@@ -326,10 +325,10 @@ label {
 }
 
 .how-it-works {
-  max-width: 100%;
   padding-top: 55px;
   background: url("png/Howitworks.png") no-repeat top center, rgb(238, 238, 238);
   padding-bottom: 100px;
+  background-size: 100% 100%;
 }
 
 .how-it-works .container .headline-white {
@@ -553,10 +552,12 @@ ul.points::-webkit-scrollbar-thumb {
 }
 
 .dealer {
-  width: 100%;
+  
   padding-top: 45px;
 
   background: url("png/Shape.png") no-repeat top center;
+
+  background-size: 100% 100%;
 }
 
 .dealer .container {
@@ -671,6 +672,11 @@ ul.points::-webkit-scrollbar-thumb {
 .soc {
   float: left;
   margin-right: 30px;
+}
+
+.soc:active {
+border-color: black;
+background: white;
 }
 
 .soc:last-child {
