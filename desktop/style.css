@@ -552,12 +552,19 @@ ul.points::-webkit-scrollbar-thumb {
 }
 
 .dealer {
+<<<<<<< HEAD
   
+=======
+>>>>>>> 27e60eb183baf2fb20da9bf7d71b7eed3bf58a64
   padding-top: 45px;
-
+  max-width:100%;
   background: url("png/Shape.png") no-repeat top center;
+<<<<<<< HEAD
 
   background-size: 100% 100%;
+=======
+  
+>>>>>>> 27e60eb183baf2fb20da9bf7d71b7eed3bf58a64
 }
 
 .dealer .container {
